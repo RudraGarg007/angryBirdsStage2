@@ -38,7 +38,7 @@ function setup(){
     bird = new Bird(100,100);
 
 
-    slingshotX = new SlingShot(bird.body, {x:265,y:150}, 0.15, 9*7)
+    slingshotX = new SlingShot(bird.body, {x:265,y:150}, 0.04, 9*2)
     
 
 }
@@ -74,6 +74,7 @@ function draw(){
 }
 function mouseDragged() {
     Matter.Body.setPosition(bird.body,{x:mouseX,y:mouseY});
+    
 }
 
 function mouseReleased(){
